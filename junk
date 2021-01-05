@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Tails of the Town</title>
+</head>
+
+
+
+
+
+ 
+ 
+<body style="">
+
+<div id="myNav" class="overlay">
+  <div class="overlay-content d-flex align-items-center">
+        
+    <ul class="nav flex-column text-center mx-auto">
+        <li class="nav-item">
+            <a class="nav-link halo-parent" href="/"><i class="halo sm"></i>Home</a>
+        </li>
+                    
+            <li class="nav-item">
+                <a class="nav-link halo-parent " href="https://good-dog-grooming.com/about/"><i class="halo sm"></i>About Us</a>
+            </li>
+                    
+            <li class="nav-item">
+                <a class="nav-link halo-parent active" href="https://good-dog-grooming.com/services/"><i class="halo sm"></i>Services</a>
+            </li>
+                    
+            <li class="nav-item">
+                <a class="nav-link halo-parent " href="https://good-dog-grooming.com/gallery/"><i class="halo sm"></i>Gallery</a>
+            </li>
+                    
+            <li class="nav-item">
+                <a class="nav-link halo-parent " href="https://good-dog-grooming.com/resources/"><i class="halo sm"></i>Resources</a>
+            </li>
+                    
+            <li class="nav-item">
+                <a class="nav-link halo-parent " href="https://good-dog-grooming.com/contact/"><i class="halo sm"></i>Contact Us</a>
+            </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <a id="js-open-menu" class="position-fixed icon-button d-lg-none" style="right:10px;top:20px;z-index:5;">
+    <i class="fal fa-chevron-circle-down fa-3x text-secondary"></i>
+  </a>
+	<div class="row menu menu-height menu-desktop text-center">
+		<div class="col-lg-2 text-center">
+
+		</div>
+	</div>
+</div>
+  
+    <div class="container-fluid">
+      <div class="row block">
+            <div class="col-md-12 sub-top back-secondary text-center">
+                <div class="display-3 text-white text-center pl-4 pr-4 pt-4 pb-4 font-weight-bold">Services</div>
+            </div>
+      </div>      
+    </div>
+
+    <div class="container pt-4 pb-4">
+      <div class="row">
+                
+                  <div class="col-12 back-primary  pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold">APPOINTMENTS</h2>
+                    
+                    
+                        <ul>
+
+                                                
+                        <li>Grooming is by appointment </li>
+
+                                                
+                        <li>Hours are flexible as I am able to work days, evenings, and some weekends </li>
+
+                                                
+                        <li>Pick up and drop off services are available at an extra charge </li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+                  <div class="col-12 col-md-4 back-primary   pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold ">BASIC GROOMING</h2>
+                    
+                    
+                        <ul>
+
+                                                
+                        <li>Bath &amp; Brush Out </li>
+
+                                                
+                        <li>Nails &amp; Paw Pads Trimmed </li>
+
+                                                
+                        <li>Nails Ground </li>
+
+                                                
+                        <li>Ears Cleaned </li>
+
+                                                
+                        <li>Anal Gland Expression (if necessary) </li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+                  <div class="col-12 col-md-4 back-secondary text-white  pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold text-white">FULL GROOMING</h2>
+                    
+                    
+                        <ul>
+
+                                                
+                        <li>Bath &amp; Brush Out </li>
+
+                                                
+                        <li>Pattern Hair Cut </li>
+
+                                                
+                        <li>Nails &amp; Paw Pads Trimmed </li>
+
+                                                
+                        <li>Nails Ground </li>
+
+                                                
+                        <li>Ears Cleaned </li>
+
+                                                
+                        <li>Anal Gland Expression (if necessary) </li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+                  <div class="col-12 col-md-4 back-primary   pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold ">ADD-ON SERVICES</h2>
+                    
+                    
+                        <ul>
+
+                                                
+                        <li>Hand Stripping $50</li>
+
+                                                
+                        <li>Flea Bath $10.00</li>
+
+                                                
+                        <li>De-Skunking $15.00</li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+                  <div class="col-12 col-md-4 back-secondary text-white  pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold text-white">SMALL DOGS</h2>
+                    Ex: Shih Tzu, Maltese, Chihuahuas
+                    
+                        <ul>
+
+                                                
+                        <li>Basic Grooming $15.00 - $25.00</li>
+
+                                                
+                        <li>Full Grooming $30.00 - $35.00</li>
+
+                        
+                        </ul>
+
+                    
+                  
+                    <h2 class="font-weight-bold text-white">MEDIUM DOGS</h2>
+                    Ex: Shelties, Cocker Spaniels
+                    
+                        <ul>
+
+                                                
+                        <li>Basic Grooming $30.00 - $40.00</li>
+
+                                                
+                        <li>Full Grooming $45.00 - $55.00</li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+                  <div class="col-12 col-md-4 back-primary   pt-4 pl-4 pr-4 pb-4 mb-4">
+
+                  
+                  
+                    <h2 class="font-weight-bold ">LARGE DOGS</h2>
+                    Ex: Labs, Golden Retrievers
+                    
+                        <ul>
+
+                                                
+                        <li>Basic Grooming $35.00 - $45.00</li>
+
+                                                
+                        <li>Full Grooming $50.00 - $65.00</li>
+
+                        
+                        </ul>
+
+                    
+                  
+                    <h2 class="font-weight-bold ">EXTRA-LARGE DOGS</h2>
+                      Ex: Great Pyrenees, St. Bernard
+                    
+                        <ul>
+
+                                                
+                        <li>Basic Grooming $50 &amp; Up</li>
+
+                                                
+                        <li>Full Grooming $65 &amp; Up</li>
+
+                        
+                        </ul>
+
+                    
+                  
+                
+                </div>
+                
+                  <div class="col-12 col-md-4 back-secondary text-white  pt-4 pl-4 pr-4 pb-4 mb-4">
+                  
+                    <h2 class="font-weight-bold text-white">CATS</h2>
+                    
+                        <ul>
+                                                
+                        <li>Full Grooming $30 &amp; Up</li>
+
+                                                
+                        <li>Pricing and services depend upon behavior and condition of cat </li>
+
+                        
+                        </ul>
+
+                    
+                  
+                    <h2 class="font-weight-bold text-white">*Prices listed are subject to change depending upon:</h2>
+                    
+                    
+                     <ul>
+                                                
+                        <li>Coat length </li>
+                                                
+                        <li>Coat condition </li>
+                                                
+                        <li>Skin condition </li>
+                                                
+                        <li>Matting of the coat </li>
+
+                        <li>Pet's behavior </li>
+                        
+                     </ul>
+
+                    
+                  
+                
+                </div>
+
+                
+    </div>
+    </div>
+
+   
+
+
+
+
+<script type="text/javascript" src="https://good-dog-grooming.com/wp-includes/js/wp-embed.min.js?ver=5.6" id="wp-embed-js"></script>
+
+
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>
