@@ -32,13 +32,25 @@ header h2 {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-  border: solid #0d6a79; }
+  border: 20px solid #0d6a79; 
+  outline: 0.5rem solid khaki;
+  padding: 2px;
+}
+
 
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: white; }
 
 a, a:hover {
   color: inherit;
@@ -78,4 +90,9 @@ a, a:hover {
   outline: 0.5rem solid khaki;
   padding: 20px;
   margin-bottom: 4rem;
+}
+.dogPic{
+  border: 20px solid #0d6a79; 
+  outline: 0.5rem solid khaki;
+  padding: 2px;
 }

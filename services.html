@@ -6,14 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap CSS // Additional CSS must be placed after Bootstrap CSS -->
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
 
     <title>Tails of the Town</title>
 </head>
@@ -30,9 +33,14 @@
                     <h1>Tails of the Town</h1>
                     <h2>Dog & Cat Grooming Salon</h2>
                 </div>
+                <div class="col">
+                    <a role="button" class="btn btn-link" href="tel:+13308319545"><i class="fa fa-phone"></i>1-330-831-9545</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:TailsOfTheTown@gmail.com"><i class="fa fa-envelope-o"></i> TailsOfTheTown@gmail.com</a>
+                </div>
             </div>
         </div>
     </header>
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
@@ -47,11 +55,11 @@
                     <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa fa-image fa-lg"></i> Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
+    
     <div class="container">
         <div class="row">
             <div class="col">
@@ -212,11 +220,12 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

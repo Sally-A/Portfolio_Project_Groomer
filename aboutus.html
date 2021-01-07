@@ -6,14 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- Bootstrap CSS // Additional CSS must be placed after Bootstrap CSS --> 
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+     <!-- endbuild -->
+     
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+ 
 
     <title>Tails of the Town</title>
 </head>
@@ -30,9 +33,14 @@
                     <h1>Tails of the Town</h1>
                     <h2>Dog & Cat Grooming Salon</h2>
                 </div>
+                <div class="col">
+                    <a role="button" class="btn btn-link" href="tel:+13308319545"><i class="fa fa-phone"></i>1-330-831-9545</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:TailsOfTheTown@gmail.com"><i class="fa fa-envelope-o"></i> TailsOfTheTown@gmail.com</a>
+                </div>
             </div>
         </div>
     </header>
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
@@ -62,22 +70,23 @@
                 <hr />
             </div>
         </div>
+    </div>        
 
+
+    <div class="container">
         <div class="row row-content tailsOwner">
-            <div class="col-sm-6">
+            <div class="col col-sm-6">
                 <h2>Meet the Owner</h2>
-                <p>Hello, my name is Carla Sadler and I am the owner and groomer at the Tails of the Town Grooming Salon. I opened on February 11, 2019. 
-                    I'm blessed to say it has been thriving ever since. My staff and I strive to make all dogs and cats look and feel their best.  
-                    No pup to big or too small, we do them all."</p>
+                <p>Hello, my name is Carla Sadler and I am the owner and groomer at the Tails of the Town Grooming Salon. I opened on February 11, 2019.  I'm blessed to say it has been thriving ever since. My staff and I strive to make all dogs and cats look and feel their best.  No pup to big or too small, we do them all."</p>
             </div>
-
-            <div class="col-sm-6">
+            <div class="col col-sm-6">
                 <div class="media">
                     <img class="d-flex ml-3 w-100" src="img/owner_with_dogs.jpg" alt="Carla Sanders Owner">
                 </div>
             </div>
         </div>
     </div>
+
 
     <footer class="site-footer">
         <div class="container">
@@ -107,9 +116,12 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 
 </body>
