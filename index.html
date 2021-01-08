@@ -8,15 +8,13 @@
 
 
     <!-- Bootstrap CSS // Additional CSS must be placed after Bootstrap CSS -->
-     <!-- build:css css/main.css -->
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-     <link rel="stylesheet" href="css/styles.css" />
-     <!-- endbuild -->
- 
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
- 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
 
     <title>Tails of the Town</title>
 </head>
@@ -50,40 +48,71 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="reserveForm">
-                            <div class="form-group row">
-                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
-
-                                <div class="col">
-                                    <select name="numCampers" id="numCampers" class="form-control">
-                                        <option selected>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                            </div>
 
                             <div class="form-group row">
-                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <label for="date" class="col-sm-4 col-form-label">Date</label>
                                 <div class="col">
                                     <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-6 col-form-label">Campsite Type</label>
-                                <div class="col-2 btn-group btn-group-toggle" >
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked />Tent
+                                <label for="time" class="col-sm-4 col-form-label">Time</label>
+                                <div class="col">
+                                    <select name="apptTime" id="apptTime" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">8am</option>
+                                        <option value="2">9am</option>
+                                        <option value="3">10am</option>
+                                        <option value="4">11am</option>
+                                        <option value="5">1pm</option>
+                                        <option value="6">2pm</option>
+                                        <option value="7">3pm</option>
+                                        <option value="8">4pm</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Type of Pet</label>
+                                <div class="col-8 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="petType" id="petDog" value="dog" autocomplete="off" checked />Dog
                                     </label>
                                     <label class="btn btn-primary">
-                                        <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off" />RV
+                                        <input type="radio" name="petType" id="petCat" value="cat" autocomplete="off" />Cat
                                     </label>
                                 </div>
+                            </div>
 
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Size of Pet</label>
+                                <div class="col-8 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="petSize" id="petSmall" value="small" autocomplete="off" checked> Small
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="petSize" id="petMedium" value="medium" autocomplete="off">Medium
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="petSize" id="petLarge" value="large" autocomplete="off">Large
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="petSize" id="petXlarge" value="xlarge" autocomplete="off">Extra-Large
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Type of Service</label>
+                                <div class="col-8 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="serviceType" id="serviceFull" value="full" autocomplete="off" checked />Full
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="serviceType" id="serviceBasic" value="basic" autocomplete="off" />Basic
+                                    </label>
+                                </div>
                             </div>
 
                             <div class="form-group row">
@@ -109,13 +138,13 @@
             <div class="collapse navbar-collapse" id="tailsNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa fa-bath fa-lg"></i> Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa fa-image fa-lg"></i> Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa fa-bath fa-lg"></i>Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fa fa-image fa-lg"></i>Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button"  id="loginButton"><i class="fa fa-sign-in"></i> Login</a>
+                    <a role="button" id="loginButton"><i class="fa fa-sign-in"></i> Login</a>
                 </span>
             </div>
         </div>
@@ -123,42 +152,40 @@
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Login</h3>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-12">
-                      <label class="sr-only" for="loginEmail">Email address</label>
-                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                    </div>
-                    <div class="form-group col-12">
-                      <label class="sr-only" for="loginPassword">Password</label>
-                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                    </div>
-                    <div class="col">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox">
-                        <label class="form-check-label"> Remember me</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
     </div>
-
-
 
     <div class="container">
         <div class="row row-content align-items-center">
@@ -167,7 +194,10 @@
                     <img class="d-flex mr-3 img-thumbnail dogPic" src="img/all_groom_thumb.jpg" alt="All types grooming" />
                     <div class="media-body align-self-center">
                         <h2>Our Grooming Services</h2>
-                        <p class="d-none d-sm-block">Our grooming services are provided by professional and caring technicians.  Grooming include bath, brush out, nails, paw pads, ears, and anal gland expression.  Full groom also includes a hair cut of your preference. We also have shampoos for skin conditions and coat conditions.  Please ask about special products or services. </p>
+                        <p class="d-none d-sm-block">Our grooming services are provided by professional and caring
+                            technicians. Grooming include bath, brush out, nails, paw pads, ears, and anal gland
+                            expression. Full groom also includes a hair cut of your preference. We also have shampoos
+                            for skin conditions and coat conditions. Please ask about special products or services. </p>
                     </div>
                 </div>
             </div>
@@ -178,7 +208,8 @@
                 <div class="media">
                     <div class="media-body align-self-center">
                         <h2>Our Hours</h2>
-                        <p class="d-none d-sm-block">Our Hours are Monday through Friday 8am to 4:30pm and Saturday 8am to Noon.  Please ask if you need to schedule outside of normal business hours.</p>
+                        <p class="d-none d-sm-block">Our Hours are Monday through Friday 8am to 4:30pm and Saturday 8am
+                            to Noon. Please ask if you need to schedule outside of normal business hours.</p>
                     </div>
                     <img class="d-flex mr-3 img-thumbnail dogPic" src="img/toweling_thumb.jpg" alt="toweling dogs" />
                 </div>
@@ -188,7 +219,8 @@
         <div class="row  row-content align-items-center">
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail dogPic" src="img/catdogtub_thumb.png" alt="Cat and dog in a tub" />
+                    <img class="d-flex mr-3 img-thumbnail dogPic" src="img/catdogtub_thumb.png"
+                        alt="Cat and dog in a tub" />
                     <div class="media-body align-self-center">
                         <h2>Our Location</h2>
                         <p class="d-none d-sm-block">121 C N. Market St. Lisbon Ohio. Located behind Mobile Bail bonds.</p>
@@ -197,20 +229,17 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.7528756627223!2d-80.76910528347008!3d40.77289419632727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883402e1aca9493d%3A0x124198540215a67f!2s121%20N%20Market%20St%2C%20Lisbon%2C%20OH%2044432!5e0!3m2!1sen!2sus!4v1609984568271!5m2!1sen!2sus" width="1000" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.7528756627223!2d-80.76910528347008!3d40.77289419632727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883402e1aca9493d%3A0x124198540215a67f!2s121%20N%20Market%20St%2C%20Lisbon%2C%20OH%2044432!5e0!3m2!1sen!2sus!4v1609984568271!5m2!1sen!2sus"
+                    width="1000" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
     <footer class="site-footer">
         <div class="container">
@@ -234,23 +263,19 @@
                 </div>
 
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+13308319545"><i class="fa fa-phone"></i> 1-330-831-9545</a><br />
+                    <a role="button" class="btn btn-link" href="tel:+13308319545"><i class="fa fa-phone"></i>  1-330-831-9545</a><br />
                     <a role="button" class="btn btn-link" href="mailto:TailsOfTheTownn@gmail.com"><i class="fa fa-envelope-o"></i> TailsOfTheTownn@gmail.com</a>
                 </div>
             </div>
         </div>
     </footer>
 
-     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <!-- build:js js/main.js -->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <!-- endbuild -->
 
-
-    <!-- end optional CDN links -->
 </body>
 
 </html>
